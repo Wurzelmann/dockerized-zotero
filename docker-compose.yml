@@ -156,7 +156,7 @@ services:
     image: node-builder
     container_name: zotero-web-library-builder
     hostname: localhost.localdomain
-    restart: no
+    restart: "no"
     env_file: ./.env
     volumes:
      - ./web-library:/buildsource
@@ -166,7 +166,7 @@ services:
     image: node-builder
     container_name: zotero-web-components-builder
     hostname: localhost.localdomain
-    restart: no
+    restart: "no"
     env_file: ./.env
     volumes:
      - ./web-components:/buildsource
